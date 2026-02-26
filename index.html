@@ -3,153 +3,172 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
         <link rel="stylesheet" type="text/css" href="index.css">
-        
-        <title>My Portfilio</title>
+        <title>My Portfolio</title>
     </head>
     <body>
-
-
-        <!-- NAVIGATION SECTION -->
         <nav class="navbar navbar-expand-md navbar-light fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand fw-bold" href="#">Mike.dev</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand fw-bold" href="#home">Mike.dev</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto gap-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#landing">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#tools">Tools</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
-                        </li>
+                    <ul class="navbar-nav ms-auto text-center gap-4">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tools"> Tools</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact"> Contacts</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
 
-        <!-- LANDING PAGE /HERO SECTION -->
-        <section id="landing" class="container min-vh-100 align-content-center">
-            <div class="row px-5">
-                <div class="col-lg-7 col-md-6 col-sm-12 align-content-center ">
-                    <h1 class="fw-bold">Full Stack Web Developer</h1>
-                    <div class="row">
-                        <p>Hi! I'm Michael Natividad. A passionate Full Stack Web Developer based on Taguig, Philippines.</p>
-                    </div>
-                    <div class="info-links">
-                        <button type="submit" class="btn text-center" download >
-                            <a href="./documents/Resume - Michael Natividad.pdf" class="cv-pdf" target="_blank">Download CV</a>
-                        </button>
-                        <a href="https://www.linkedin.com/" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
+        <!-- HOME SECTION -->
+        <section id="home" class="container min-vh-100 d-flex align-items-center">
+            <div class="row d-flex flex-column-reverse flex-md-row align-item-center">
+                <div class="description col-12 col-md-6 text-center text-md-start align-content-center">
+                    <h1 class="fw-bold">Full Stack </br> Web Developer</h1>
+                    <p>Hi! I'm <strong>Michael Natividad</strong>. A passionate Full Stack Web Developer based in Taguig, Philippines.</p>
+                    <div class="profile-link d-flex justify-content-center justify-content-md-start gap-2 flex-wrap">
+                        <a href="./documents/Resume - Natividad.pdf" class="btn btn-primary rounded-pill" target="_blank">
+                            Download CV
                         </a>
-                         <a href="https://github.com/" target="_blank">
-                            <i class="fa-brands fa-github"></i></i>
+                        <a href="https://www.linkedin.com/" target="_blank" class="linkedin align-content-center">
+                            <i class="fa-brands fa-square-linkedin fs-1"></i>
+                        </a>
+                        <a href="https://github.com/" target="_blank" class="github align-content-center">
+                            <i class="fa-brands fa-github fs-1"></i>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-6 col-sm-12">
-                    <img src="./images/mike.png" alt="Profile Picture" id="profile-pic" class=" d-block mx-auto"/>
+                <div class="col-12 col-md-6 text-md-end text-center align-content-center py-3 pb-md-0">
+                    <img src="./images/mike.png" alt="Profile Picture" class="profile-img img-fluid">
                 </div>
-                <div class="col-lg-5 col-md-6 col-sm-12tech-stack">
-                    <h5 class="fw-bold"">Tech Stack</h5>
-                    <div class="tech-stack-logo">
-                        <div><i class="fa-brands fa-html5"></i></div>
-                        <div><i class="fa-brands fa-css3-alt"></i></div>
-                        <div><i class="fa-brands fa-square-js"></i></div>
-                        <div><i class="fa-brands fa-bootstrap"></i></div>
-                        <div><i class="fa-brands fa-node"></i></div>
-                        <div><i class="fa-brands fa-vuejs"></i></div>
-                    </div>          
-                </div>
-            </div>            
+            </div> 
         </section>
-
+        
 
         <!-- PROJECT SECTION -->
-        <section id="projects" class="container-fluid min-vh-100 text-center p-5">
-            <h2 class="fw-bold pt-5">My Projects</h2>
-            <p></p>
-            <div class="row px-5 g-0">
-                <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm my-3 px-3" >
-                    <img src="./images/swiftcart-api-explorer.png" alt="E-Commerce API Documentation" class="img-fluid rounded pb-4">
-                    <h3>SwiftCart API Explorer</h3>
-                    <p>A comprehensive technical documentation site providing developers with endpoints for user authentication, product catalogs, and secure checkout integration.</p>
+        <section id="projects" class="container d-flex justify-content-center pt-5">
+            <div class="row justify-content-center align-item-center gap-3 g-0">
+                <h2 class="text-center fw-bold pt-4">My Projects</h2>
+                <div class="col-12 col-md-6 col-lg-3 card text-center rounded shadow-sm" style="width: 18rem;">
+                    <img src="./images/swiftcart-api-explorer.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SwiftCart API Explorer</h5>
+                        <p class="card-text">A comprehensive technical documentation site providing developers with endpoints for user authentication, product catalogs, and secure checkout integration.</p>
+                        <h6 class="card-subtitle mb-2 text-muted">HTML CSS JavaScript</h6>
+                        <a href="#" class="card-link">Code</a>
+                        <a href="#" class="card-link">Live Demo</a>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm my-3 px-3">
-                    <img src="./images/course-booking-api-documentation.png" alt="Course Booking App" class="img-fluid rounded pb-4">
-                    <h3>EduStream Backend Docs</h3>
-                    <p>An interactive documentation portal outlining the RESTful architecture used to manage student enrollments, instructor schedules, and course availability.</p>
+                <div class="col-12 col-md-6 col-lg-3 card text-center rounded shadow-sm" style="width: 18rem;">
+                    <img src="./images/FlyHigh Interactive Prototype.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">EduStream Backend Docs</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">TechStack</h6>
+                        <p class="card-text">An interactive documentation portal outlining the RESTful architecture used to manage student enrollments, instructor schedules, and course availability.</p>
+                        <a href="#" class="card-link">Code</a>
+                        <a href="#" class="card-link">Live Demo</a>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm my-3 px-3">
-                    <img src="./images/skillup-learning-portal.png" alt="Course Booking App" class="img-fluid rounded pb-4">
-                    <h3>SkillUp Learning Portal</h3>
-                    <p>A comprehensive technical documentation site providing developers with endpoints for user authentication, product catalogs, and secure checkout integration.</p>
+                <div class=" col-12 col-md-6 col-lg-3 card text-center rounded shadow-sm" style="width: 18rem;">
+                    <img src="./images/MicroLearn Mastery Site.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SkillUp Learning Portal</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">TechStack</h6>
+                        <p class="card-text">A comprehensive technical documentation site providing developers with endpoints for user authentication, product catalogs, and secure checkout integration.</p>
+                        <a href="#" class="card-link">Code</a>
+                        <a href="#" class="card-link">Live Demo</a>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm my-3 px-3">
-                    <img src="./images/urbanthread-apparel.png" alt="Course Booking App" class="img-fluid rounded pb-4">
-                    <h3>UrbanThread Apparel</h3>
-                    <p>A high-performance storefront featuring product filtering, a dynamic shopping cart, and a mobile-first checkout experience.</p>
+                <div class="col-12 col-md-6 col-lg-3 card text-center rounded shadow-sm" style="width: 18rem;">
+                    <img src="./images/swiftcart-api-explorer.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SwiftCart API Explorer</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">TechStack</h6>
+                        <p class="card-text">A comprehensive technical documentation site providing developers with endpoints for user authentication, product catalogs, and secure checkout integration.</p>
+                        <a href="#" class="card-link">Code</a>
+                        <a href="#" class="card-link">Live Demo</a>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm my-3 px-3">
-                    <img src="./images/SkyBound Travel UI Mockup.png" alt="Airline Booking System Mockup" class="img-fluid rounded pb-4">
-                    <h3>SkyBound Travel UI Mockup</h3>
-                    <p>A high-fidelity visual design focusing on the "Search and Select" flow for international flights, emphasizing clean typography and intuitive user paths.</p>
+                <div class="col-12 col-md-6 col-lg-3 card text-center rounded shadow-sm" style="width: 18rem;">
+                    <img src="./images/FlyHigh Interactive Prototype.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">EduStream Backend Docs</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">TechStack</h6>
+                        <p class="card-text">An interactive documentation portal outlining the RESTful architecture used to manage student enrollments, instructor schedules, and course availability.</p>
+                        <a href="#" class="card-link">Code</a>
+                        <a href="#" class="card-link">Live Demo</a>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm my-3 px-3">
-                    <img src="./images/FlyHigh Interactive Prototype.png" alt="Airline Booking System Prototype" class="img-fluid rounded pb-4">
-                    <h3>FlyHigh Interactive Prototype</h3>
-                    <p>A functional prototype that simulates the booking journey, from selecting a destination to receiving a digital boarding pass, using Bootstrap transitions.</p>
+                <div class=" col-12 col-md-6 col-lg-3 card text-center rounded shadow-sm" style="width: 18rem;">
+                    <img src="./images/MicroLearn Mastery Site.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SkillUp Learning Portal</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">TechStack</h6>
+                        <p class="card-text">A comprehensive technical documentation site providing developers with endpoints for user authentication, product catalogs, and secure checkout integration.</p>
+                        <a href="#" class="card-link">Code</a>
+                        <a href="#" class="card-link">Live Demo </a>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm my-3 px-3">
-                    <img src="./images/MicroLearn Mastery Site.png" alt="Short Courses Capstone" class="img-fluid rounded pb-4">
-                    <h3>MicroLearn Mastery Site</h3>
-                    <p>A final capstone project showcasing a directory of certification programs, featuring a robust search bar and a responsive "Instructor Profile" section.</p>
+                <div class=" col-12 col-md-6 col-lg-3 card text-center rounded shadow-sm" style="width: 18rem;">
+                    <img src="./images/MicroLearn Mastery Site.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SkillUp Learning Portal</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">TechStack</h6>
+                        <p class="card-text">A comprehensive technical documentation site providing developers with endpoints for user authentication, product catalogs, and secure checkout integration.</p>
+                        <a href="#" class="card-link">Code</a>
+                        <a href="#" class="card-link">Live Demo </a>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm my-3 px-3">
-                    <img src="./images/MicroLearn Mastery Site.png" alt="Short Courses Capstone" class="img-fluid rounded pb-4">
-                    <h3>MicroLearn Mastery Site</h3>
-                    <p>A final capstone project showcasing a directory of certification programs, featuring a robust search bar and a responsive "Instructor Profile" section.</p>
+                <div class=" col-12 col-md-6 col-lg-3 card text-center rounded shadow-sm" style="width: 18rem;">
+                    <img src="./images/MicroLearn Mastery Site.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SkillUp Learning Portal</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">TechStack</h6>
+                        <p class="card-text">A comprehensive technical documentation site providing developers with endpoints for user authentication, product catalogs, and secure checkout integration.</p>
+                        <a href="#" class="card-link">Code</a>
+                        <a href="#" class="card-link">Live Demo </a>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm my-3 px-3">
-                    <img src="./images/MicroLearn Mastery Site.png" alt="Short Courses Capstone" class="img-fluid rounded pb-4">
-                    <h3>MicroLearn Mastery Site</h3>
-                    <p>A final capstone project showcasing a directory of certification programs, featuring a robust search bar and a responsive "Instructor Profile" section.</p>
+                <div class=" col-12 col-md-6 col-lg-3 card text-center rounded shadow-sm" style="width: 18rem;">
+                    <img src="./images/MicroLearn Mastery Site.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SkillUp Learning Portal</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">TechStack</h6>
+                        <p class="card-text">A comprehensive technical documentation site providing developers with endpoints for user authentication, product catalogs, and secure checkout integration.</p>
+                        <a href="#" class="card-link">Code</a>
+                        <a href="#" class="card-link">Live Demo </a>
+                    </div>
                 </div>
             </div>
         </section>
 
 
         <!-- TOOLS SECTION -->
-        <section id="tools" class="container-fluid pt-5 mt-5 text-center">
-            <h2 class="fw-bold pt-5">Tech Stack and Tools</h2>
-            <img src="./images/tech-stack.png" alt="Full-stack-development-tools" class="tools-img shadow-sm rounded-3 pb-5 my-5">
+        <section id="tools" class="container pt-5 text-center">
+            <h2 class="fw-bold pt-4">Tech Stack and Tools</h2>
+            <img src="./images/tech-stack.png" alt="Full-stack-development-tools" class="border tools-img shadow-sm rounded-3">
         </section>
 
 
         <!-- CONTACT SECTION -->
-        <section id="contact" class="container-fluid min-vh-100">
-            <div class="row">
-                <div class="col-6-lg col-md-12 text-center mb-3">
-                    <h2 class="fw-bold pt-5 mt-5">Get In Touch</h2>
+        <section id="contact" class="container pt-4">
+            <div class="row d-flex">
+                <div class="col-6-lg text-center">
+                    <h2 class="fw-bold pt-5">Get In Touch</h2>
                     <p class="text-muted">Have a question? We'd love to hear from you.</p>
                 </div>
             
-                <div class="col-lg-6 col-md-10 col-sm-10 mx-auto">
-                    <div class="card border-0 shadow-sm">
-                        <form class="p-3 m-3s">
+                <div class="col-lg-6">
+                    <div class="card shadow-sm">
+                        <form class="p-3 m-3">
                             <div class="mb-3">
                                 <label for="userName" class="form-label fw-semibold">Full Name</label>
                                 <input type="text" class="form-control" id="userName" placeholder="John Doe" required>
@@ -166,36 +185,39 @@
                             </div>
 
                             <div class="mb-3">
-                                <label for="userComment" class="form-label fw-semibold">Comment</label>
+                                <label for="userComment" class="form-label fw-semibold">Message</label>
                                 <textarea class="form-control" id="userComment" rows="5" placeholder="How can we help you?"></textarea>
                             </div>
 
                             <div class="d-grid">
-                                <button type="submit" class="btn btn-primary btn-lg text-center">Send Message</button>
+                                <button type="submit" class="btn btn-primary text-center">Send Message</button>
                             </div>
                         </form>
                     </div>
                 </div>
-            </div>
-            <div class="row g-4 align-items-center p-3">
-                <div class="col-lg-12">
-                    <div class="h-50 ratio ratio-4x3 ratio-lg-1x1 shadow-sm rounded overflow-hidden my-5">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2151322880753!2d-73.9878441234208!3d40.757980834839845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+
+                <div class="col-lg-6">
+                    <div class="h-100 ratio ratio-4x3 ratio-lg-1x1 shadow-sm rounded overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15451.43683397226!2d121.0504851640625!3d14.492770605636604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1771489162238!5m2!1sen!2sph" 
+                            width="600" 
+                            height="450" 
                             style="border:0;" 
                             allowfullscreen="" 
                             loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
+                            referrerpolicy="no-referrer-when-downgrade"
+                            >
                         </iframe>
                     </div>
                 </div>
             </div>
-        </section>
+         </section>
 
 
         <!-- FOOTER SECTION -->
-        <footer class="footer text-center">
+        <footer class="footer text-center mt-5 ">
             <p>Michael Natividad | Full Stack Web Developer | All Rights Reserved 2026</p>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>

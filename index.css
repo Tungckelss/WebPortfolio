@@ -1,110 +1,50 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+    scroll-behavior: smooth;
+}
 
 * {
-    background: white;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
     font-family: 'Poppins', sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
+nav {
+    padding: 0 3%;
+}
+
+.nav-item {
+    font-size: 0.8rem;
 }
 
 .navbar .navbar-nav .nav-link {
     color: black;
 }
-nav {
-    padding: 0 3%;
+
+h1 {
+    font-size: 40px;
 }
 
-ul li {
-    font-size: 0.9rem;
-}
-#profile-pic {
-    height: 50vh;
+.profile-img {
+    max-width: 70%;
 }
 
-.cv-pdf {
-    background-color: blue;
-    text-align: center;
-    border-radius: 24px;
-    color: white;
-    padding: 7px;
-    font-size: 1rem;
-    width: 7rem;
-    text-decoration: none;
-}
-
-.download-cv:hover {
-    color: white;
-}
-
-.info-links {
-    margin-top: 15px;
-    display: flex;
-    align-items: start;
-    gap: 0.5rem;
-}
-
-.tech-stack {
-    margin-top: 2rem;
-    display: inline-block;   
-}
-
-.tech-stack-logo {
-    margin-top: 1rem;
-    display: flex;
-    gap: 1rem;
-}
-
-.fa-linkedin, .fa-github {
-    text-align: center;
-    font-size: 2rem;
+.fa-square-linkedin, .fa-github {
     color: black;
 }
 
-.fa-html5 {
-    font-size: 2rem;
-    color: orangered;
-    
-}
-
-.fa-css3-alt {
-    font-size: 2rem;
-    color: blue;
-}
-
-.fa-square-js {
-    font-size: 2rem;
-    color: rgb(255, 255, 42);
-}
-
-.fa-bootstrap {
-    font-size: 2rem;
-    color: purple;
-}
-
-.fa-node {
-    font-size: 2rem;
-    color: green;
-}
-
-.fa-vuejs {
-    font-size: 2rem;
-    color: darkgreen;
+.card-text {
+    font-size: small;
 }
 
 .tools-img {
-    height: 400px;
-    padding-bottom: 3rem;
-
+    max-width: 60%;
+    width: 100%;
 }
 
 footer p {
     margin: 0;
-    padding: 2rem;
+    padding: 1.3rem;
     width: 100%;
     background: rgb(6, 3, 36);
     color: white;
